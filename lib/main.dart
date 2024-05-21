@@ -11,5 +11,5 @@ void main() async => await _init().then((_) => runApp(const ProviderScope(child:
 Future<void> _init() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  await openDB();
+  // await openDB();
 }

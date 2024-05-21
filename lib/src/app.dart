@@ -16,7 +16,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       localizationsDelegates: localizationsDelegates,
-      theme: ref.watch(themeProvider).theme,
+      // theme: ref.watch(themeProvider).theme,
       supportedLocales: supportedLocales,
       debugShowCheckedModeBanner: false,
       onGenerateTitle: onGenerateTitle,
