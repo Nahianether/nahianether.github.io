@@ -6,8 +6,6 @@ import 'constants/constants.dart' show appName;
 import 'extensions/extensions.dart' show BuildContextExtension;
 import 'localization/loalization.dart' show localizationsDelegates, onGenerateTitle, supportedLocales, t;
 import 'modules/router/view/router.dart' show AppRouter;
-import 'theme/model/theme.model.dart' show ThemeProfileExtension;
-import 'theme/provider/theme.provider.dart' show themeProvider;
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
@@ -16,7 +14,6 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       localizationsDelegates: localizationsDelegates,
-      // theme: ref.watch(themeProvider).theme,
       supportedLocales: supportedLocales,
       debugShowCheckedModeBanner: false,
       onGenerateTitle: onGenerateTitle,
