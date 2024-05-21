@@ -45,7 +45,12 @@ flutter:
   generate: true
 
   assets:
+    - assets/experiences/
+    - assets/gifs/
+    - assets/icons/
     - assets/images/
+    - assets/svgs/
+    - assets/works/
 
 import_sorter:
   comments: false
